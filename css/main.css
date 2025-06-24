@@ -1,0 +1,653 @@
+@font-face {
+  font-family: "MODERNE SANS";
+  src: url("./fonts/MODERNE SANS.ttf") format("truetype"); }
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+body {
+  font: 16px/26px "MODERNE SANS", Helvetica, Helvetica Neue, Arial;
+  background: #fff url("../img/bg.jpg");
+  background-attachment: fixed; }
+  body.no-scroll {
+    overflow: hidden; }
+
+a {
+  color: #222222; }
+
+.box-border, .thank-you .box,
+.mask .box, .thank-you .box-3,
+.mask .box-3, .thank-you form button,
+.mask form button, .main-container .form .box, .main-container .form .box-3, .main-container .rsvp {
+  border: 1px solid black; }
+
+.thank-you,
+.mask {
+  background: #ffffff url("../img/bg.jpg");
+  width: 100%;
+  overflow: auto; }
+  .thank-you .back,
+  .mask .back {
+    display: none; }
+  .thank-you .box,
+  .mask .box {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    height: 80px;
+    line-height: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 16px;
+    border-bottom: none; }
+    .thank-you .box a,
+    .mask .box a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      width: 100%;
+      height: 100%; }
+      .thank-you .box a:hover,
+      .mask .box a:hover {
+        background-color: #f2f2f2; }
+  .thank-you .box-0,
+  .mask .box-0 {
+    width: 20%;
+    display: none; }
+  .thank-you .box-1,
+  .mask .box-1 {
+    width: 20%;
+    border-right: none; }
+  .thank-you .box-2,
+  .mask .box-2 {
+    font-size: 16px;
+    width: 80%; }
+  .thank-you .box-3,
+  .mask .box-3 {
+    position: relative;
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px; }
+  .thank-you form,
+  .mask form {
+    width: 90%;
+    margin: 5% auto;
+    font-size: 1.3em;
+    line-height: 1.3;
+    position: relative;
+    background-color: #ffffff; }
+    .thank-you form .eng,
+    .mask form .eng {
+      font-size: 0.7em;
+      line-height: 1.2;
+      display: block; }
+    .thank-you form .section,
+    .mask form .section {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      padding: 20px;
+      display: none; }
+    .thank-you form .selection,
+    .mask form .selection {
+      margin: 20px 0; }
+      .thank-you form .selection .radio,
+      .mask form .selection .radio {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        padding-left: 40px;
+        margin-bottom: 20px; }
+        .thank-you form .selection .radio input,
+        .mask form .selection .radio input {
+          position: absolute;
+          top: 10px;
+          left: 0; }
+      .thank-you form .selection > div,
+      .mask form .selection > div {
+        margin-bottom: 20px; }
+      .thank-you form .selection input[type='text'],
+      .mask form .selection input[type='text'] {
+        width: 70%;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 10px;
+        border: 1px solid #000; }
+      .thank-you form .selection select,
+      .mask form .selection select {
+        border-radius: 0;
+        border: 1px solid #000000;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        background-color: transparent; }
+      .thank-you form .selection textarea,
+      .mask form .selection textarea {
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        height: 300px;
+        resize: none; }
+        .thank-you form .selection textarea.small,
+        .mask form .selection textarea.small {
+          height: 140px; }
+      .thank-you form .selection ul li,
+      .mask form .selection ul li {
+        margin-bottom: 20px; }
+    .thank-you form .is-coming,
+    .mask form .is-coming {
+      display: none; }
+      .thank-you form .is-coming.show,
+      .mask form .is-coming.show {
+        display: block; }
+    .thank-you form .is-taiwan,
+    .mask form .is-taiwan {
+      display: none; }
+      .thank-you form .is-taiwan.show,
+      .mask form .is-taiwan.show {
+        display: block; }
+    .thank-you form .card,
+    .mask form .card {
+      display: none; }
+      .thank-you form .card.show,
+      .mask form .card.show {
+        display: block; }
+    .thank-you form .not-coming,
+    .mask form .not-coming {
+      display: none; }
+      .thank-you form .not-coming.show,
+      .mask form .not-coming.show {
+        display: block; }
+    .thank-you form button,
+    .mask form button {
+      display: block;
+      background-color: transparent;
+      padding: 20px 40px;
+      margin: 20px auto;
+      width: 300px; }
+      .thank-you form button:hover,
+      .mask form button:hover {
+        background-color: #f2f2f2; }
+
+.thank-you {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000; }
+  .thank-you .eng {
+    font-size: 0.7em;
+    line-height: 1.2;
+    display: block; }
+  .thank-you .section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px; }
+  .thank-you .form {
+    width: 90%;
+    margin: 5% auto;
+    font-size: 1.5em;
+    line-height: 1.3;
+    background-color: #ffffff; }
+    .thank-you .form .box-0 {
+      display: block; }
+    .thank-you .form .box-2 {
+      border-right: none; }
+    .thank-you .form .box-3 {
+      height: auto; }
+  .thank-you .thank-you-1,
+  .thank-you .thank-you-2,
+  .thank-you .thank-you-3 {
+    display: none; }
+    .thank-you .thank-you-1 .contact,
+    .thank-you .thank-you-2 .contact,
+    .thank-you .thank-you-3 .contact {
+      font-size: 16px; }
+    .thank-you .thank-you-1 .info,
+    .thank-you .thank-you-2 .info,
+    .thank-you .thank-you-3 .info {
+      font-size: 16px; }
+
+.audio-play {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 0.9em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  line-height: 1; }
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/IMG_1118.jpg") no-repeat center top;
+  background-size: contain;
+  box-sizing: border-box; }
+
+.main-container {
+  max-width: 1440px;
+  margin: auto; }
+  .main-container .main {
+    position: relative; }
+  .main-container .form {
+    position: absolute;
+    width: 90%;
+    margin: 0 5%;
+    top: 20vh;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.6); }
+    .main-container .form > div {
+      box-sizing: border-box; }
+    .main-container .form .box {
+      height: 120px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 16px; }
+    .main-container .form .box-1 {
+      display: none;
+      width: 10%;
+      border-bottom: none;
+      border-right: none;
+      letter-spacing: 0;
+      font-size: 1.8em;
+      color: red; }
+    .main-container .form .box-2 {
+      padding-top: 20px;
+      line-height: 40px;
+      width: 100%;
+      border-bottom: none; }
+      .main-container .form .box-2 .short {
+        display: block; }
+      .main-container .form .box-2 .long {
+        display: none; }
+    .main-container .form .box-3 {
+      float: left;
+      width: 100%;
+      height: 200px;
+      line-height: 2.6;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 10px;
+      font-size: 1.8em; }
+      .main-container .form .box-3 p {
+        margin-top: 30px; }
+        .main-container .form .box-3 p .line {
+          display: block; }
+          .main-container .form .box-3 p .line.eng {
+            letter-spacing: 2px; }
+          .main-container .form .box-3 p .line span {
+            display: none; }
+  .main-container .rsvp {
+    display: none;
+    background-color: transparent;
+    padding: 20px 40px;
+    margin: 20px auto;
+    width: 300px; }
+    .main-container .rsvp:hover {
+      background-color: #f2f2f2; }
+  .main-container .gallery {
+    width: 100%;
+    margin: 480px auto 0; }
+    .main-container .gallery .photo-wrapper {
+      clear: both;
+      margin: 20px auto;
+      width: 94%; }
+    .main-container .gallery .photo {
+      border: 20px solid #fff;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      display: block;
+      box-sizing: border-box;
+      margin-bottom: 20px; }
+    .main-container .gallery .photo-box .eng {
+      font-size: 12px;
+      letter-spacing: 2px; }
+    .main-container .gallery .photo-box {
+      box-sizing: border-box;
+      padding: 20px 40px;
+      text-transform: uppercase;
+      background-color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 5px; }
+    .main-container .gallery .portrait {
+      margin-left: 0;
+      width: 100%;
+      height: 540px; }
+    .main-container .gallery .landscape {
+      margin-left: 0;
+      width: 100%;
+      height: 270px; }
+    .main-container .gallery .photo-1 {
+      background: url("../img/IMG_1094.jpg") no-repeat 50% 80%;
+      background-size: cover;
+      -ms-transform: rotate(-1deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-1deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(-1deg); }
+    .main-container .gallery .photo-box-1 {
+      width: 100%; }
+    .main-container .gallery .photo-2 {
+      background: url("../img/IMG_1007.jpg") no-repeat 50% 60%;
+      background-size: cover;
+      -ms-transform: rotate(2deg);
+      /* IE 9 */
+      -webkit-transform: rotate(2deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(2deg); }
+    .main-container .gallery .photo-box-2 {
+      width: 100%; }
+    .main-container .gallery .photo-3 {
+      background: url("../img/IMG_0955.jpg") no-repeat 50% 80%;
+      background-size: cover;
+      -ms-transform: rotate(-1deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-1deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(-1deg); }
+    .main-container .gallery .photo-box-3 {
+      width: 100%; }
+    .main-container .gallery .photo-4 {
+      background: url("../img/IMG_1401.jpg") no-repeat 50% 80%;
+      background-size: cover;
+      height: 430px;
+      -ms-transform: rotate(-1deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-1deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(-1deg); }
+    .main-container .gallery .photo-box-4 {
+      width: 100%; }
+    .main-container .gallery .photo-5 {
+      background: url("../img/IMG_0726.jpg") no-repeat 50% 80%;
+      background-size: cover;
+      -ms-transform: rotate(-1deg);
+      /* IE 9 */
+      -webkit-transform: rotate(-1deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(-1deg); }
+    .main-container .gallery .photo-box-5 {
+      width: 100%; }
+    .main-container .gallery .photo-6 {
+      background: url("../img/IMG_0993.jpg") no-repeat 50% 50%;
+      background-size: cover; }
+    .main-container .gallery .photo-box-6 {
+      width: 100%; }
+    .main-container .gallery .photo-7 {
+      background: url("../img/IMG_0792.jpg") no-repeat 50% 50%;
+      background-size: cover; }
+    .main-container .gallery .photo-box-7 {
+      width: 100%; }
+    .main-container .gallery .photo-8 {
+      background: url("../img/IMG_0867.jpg") no-repeat 50% 50%;
+      background-size: cover;
+      -ms-transform: rotate(1deg);
+      /* IE 9 */
+      -webkit-transform: rotate(1deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(1deg); }
+    .main-container .gallery .photo-box-8 {
+      width: 100%; }
+
+#map-tw,
+#map-kk {
+  width: 100%;
+  height: 350px; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 560px) {
+  .bg {
+    height: 500px;
+    background-size: cover; }
+
+  .main-container .form {
+    top: 360px;
+    width: 80%;
+    margin: 0 10% 0; }
+    .main-container .form .box-3 {
+      height: 280px; }
+      .main-container .form .box-3 p {
+        margin-top: 60px; }
+  .main-container .gallery {
+    width: 80%;
+    margin: 830px auto 0; }
+    .main-container .gallery .photo {
+      width: 80%;
+      margin: auto; }
+    .main-container .gallery .photo-box {
+      width: 80%;
+      margin: auto; } }
+@media only screen and (min-width: 768px) {
+  .main-container .gallery .photo {
+    width: 70%;
+    margin: auto; }
+  .main-container .gallery .photo-box {
+    width: 70%;
+    margin: auto; }
+  .main-container .gallery .portrait {
+    height: 600px; }
+  .main-container .gallery .landscape {
+    height: 280px; }
+  .main-container .gallery .photo-4 {
+    height: 480px; } }
+@media only screen and (min-width: 900px) {
+  .bg {
+    height: 100vh; }
+
+  .main-container .box-border, .main-container .thank-you .box, .thank-you .main-container .box,
+  .main-container .mask .box,
+  .mask .main-container .box, .main-container .thank-you .box-3, .thank-you .main-container .box-3,
+  .main-container .mask .box-3,
+  .mask .main-container .box-3, .main-container .thank-you form button, .thank-you form .main-container button,
+  .main-container .mask form button,
+  .mask form .main-container button, .main-container .form .box, .main-container .form .box-3, .main-container .rsvp {
+    border: 2px solid black; }
+  .main-container .main {
+    width: 100%;
+    height: 100vh;
+    margin-left: 00%; }
+  .main-container .form {
+    width: 80%;
+    margin: 0 10%;
+    top: 60%;
+    margin-top: -160px; }
+    .main-container .form .box {
+      float: left;
+      line-height: 120px;
+      border-bottom: none; }
+    .main-container .form .box-1 {
+      display: block;
+      border-right: none; }
+    .main-container .form .box-2 {
+      padding-top: 0;
+      width: 90%;
+      line-height: 120px; }
+      .main-container .form .box-2 .short {
+        display: inline; }
+    .main-container .form .box-3 p .line span {
+      display: inline; }
+  .main-container .gallery {
+    margin: 90vh auto 0; }
+    .main-container .gallery .photo-wrapper {
+      margin: 140px 0; }
+    .main-container .gallery .photo {
+      float: left;
+      width: 55%; }
+    .main-container .gallery .photo-box {
+      float: right;
+      padding: 40px 20px;
+      width: 40%;
+      letter-spacing: 0; }
+    .main-container .gallery .photo-box-1 {
+      margin-top: 26%; }
+    .main-container .gallery .photo-2 {
+      float: right; }
+    .main-container .gallery .photo-box-2 {
+      float: left;
+      margin-top: 6%; }
+    .main-container .gallery .photo-box-3 {
+      margin-top: 6%; }
+    .main-container .gallery .photo-box-4 {
+      margin-top: 6%; }
+    .main-container .gallery .photo-5 {
+      float: right; }
+    .main-container .gallery .photo-box-5 {
+      float: left;
+      margin-top: 6%; }
+    .main-container .gallery .photo-box-6 {
+      margin-top: 6%; }
+    .main-container .gallery .photo-7 {
+      float: right; }
+  .main-container .rsvp {
+    display: block;
+    margin: 40px auto; }
+
+  .thank-you .form {
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px; }
+    .thank-you .form .section {
+      padding: 40px; }
+
+  .mask {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000; }
+    .mask .box {
+      border-width: 2px;
+      height: 100px;
+      line-height: 100px; }
+    .mask .box-0 {
+      display: block; }
+    .mask .box-2 {
+      width: 60%;
+      border-right: none; }
+    .mask .box-3 {
+      border-width: 2px; }
+    .mask form {
+      position: absolute;
+      width: 800px;
+      left: 50%;
+      margin-left: -400px; }
+      .mask form .section {
+        display: none;
+        padding: 40px; }
+      .mask form button {
+        margin: 40px auto;
+        border-width: 2px; } }
+@media only screen and (min-width: 1140px) {
+  .main-container .main {
+    width: 100%;
+    height: 100vh;
+    margin-left: 00%; }
+  .main-container .form {
+    margin-top: -200px; }
+    .main-container .form .box-1 {
+      display: block; }
+    .main-container .form .box-2 {
+      padding-top: 0;
+      width: 90%;
+      line-height: 120px; }
+      .main-container .form .box-2 .short {
+        display: none; }
+      .main-container .form .box-2 .long {
+        display: inline; }
+    .main-container .form .box-3 p .line span {
+      display: inline; }
+  .main-container .gallery .photo-box {
+    letter-spacing: 10px; }
+  .main-container .gallery .portrait {
+    height: 900px; }
+  .main-container .gallery .landscape {
+    height: 420px; }
+  .main-container .gallery .photo-4 {
+    height: 540px; } }
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/*# sourceMappingURL=main.css.map */
